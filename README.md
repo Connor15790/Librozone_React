@@ -58,6 +58,14 @@ For the Client:
 -Install the dependencies: npm install
 -Or: yarn install
 
+IMPORTANT TO COMPLETE THIS PROCESS!!!
+
+- Open the Search and Replace Panel: Press Ctrl + Shift + F (or Cmd + Shift + F on macOS) to open the global search in VS Code.
+- Search for the URL: In the search field, type https://librozone-react.onrender.com.
+- Replace with Localhost URL: Click on the arrow next to the search field to reveal the replace input field.
+- In the replace input field, type http://localhost:5000
+- Replace All Instances: Click on the Replace All button (the double arrow icon) or press Alt + Enter to replace all instances across the entire project.
+
 4. Run the Server
 -After installing the dependencies, start the server by navigating back to the server directory if you're not already there: cd ../server
 -Run the server: npm start
