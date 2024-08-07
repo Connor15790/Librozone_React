@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { Form, Button, Alert } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 import styles from "./Admin.module.css";
 import axios from 'axios';
 import bookContext from '../context/books/bookContext';
@@ -12,7 +12,6 @@ const Admin = () => {
 
     // const [books1, setBooks] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
-    const [savesuccess, setSavesuccess] = useState(null);
 
     const { books = [], setBooks, fetchAllBooks } = context;
 
@@ -28,7 +27,7 @@ const Admin = () => {
 
     const handleRemove = async (bookId) => {
         try {
-            await axios.delete(`http://localhost:5000/book/deletebook/${bookId}`, {
+            await axios.delete(`http://librozone-react.vercel.app/book/deletebook/${bookId}`, {
                 headers: {
                     "Content-Type": "application/json",
                     'Authorization': atoken

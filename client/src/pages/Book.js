@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from "./Book.module.css";
-// import bookimg from "../assets/frankenstein.png";
 
 import { useLocation } from 'react-router-dom';
 

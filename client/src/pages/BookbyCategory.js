@@ -1,18 +1,16 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './Categories.module.css';
-import { Form, Button, Alert } from 'react-bootstrap';
-import axios from 'axios';
+import { Button } from 'react-bootstrap';
 import bookContext from '../context/books/bookContext';
 
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const BookbyCategory = () => {
     const navigate = useNavigate();
     const context = useContext(bookContext);
     const { category } = useParams();
 
-    // const [books, setBooks] = useState([]);
     const [alert, setAlert] = useState("");
 
     useEffect(() => {
@@ -26,7 +24,7 @@ const BookbyCategory = () => {
         try {
             const atoken = localStorage.getItem("token");
 
-            const response = await fetch('http://localhost:5000/book/savebooktoshelf', {
+            const response = await fetch('http://librozone-react.vercel.app/book/savebooktoshelf', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

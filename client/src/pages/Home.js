@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Alert, Button, Form } from 'react-bootstrap';
 import styles from './Home.module.css';
-// import { UserContext } from '../context/users/userContext';
 import bookContext from '../context/books/bookContext';
 import Footer from '../components/Footer';
 
@@ -18,7 +17,6 @@ const Home = () => {
     const { books, setBooks, fetchAllPopularBooks } = context;
 
     const [successMessage, setSuccessMessage] = useState(location.state?.successMessage || '');
-    // const { username, setUsername } = useContext(UserContext);
     const [username, setUsername] = useState('');
     const [alert, setAlert] = useState("");
 
@@ -26,24 +24,18 @@ const Home = () => {
     useEffect(() => {
         if (successMessage) {
             const timer = setTimeout(() => {
-                setSuccessMessage(''); // Clear the success message after 2 seconds
+                setSuccessMessage(''); 
             }, 2000);
 
-            // Cleanup the timer if the component unmounts before the timer ends
             return () => clearTimeout(timer);
         }
     }, [successMessage]);
 
     useEffect(() => {
         return () => {
-            setSuccessMessage(''); // Clear the success message when the component unmounts
+            setSuccessMessage('');
         };
     }, []);
-
-    // useEffect(() => {
-    //     const username = location.state?.username || '';
-    //     setUsername(username);
-    // }, [location.state, setUsername]);
 
     useEffect(() => {
         // Get the email from local storage
@@ -90,7 +82,7 @@ const Home = () => {
         try {
             const atoken = localStorage.getItem("token");
 
-            const response = await fetch('http://localhost:5000/book/savebooktoshelf', {
+            const response = await fetch('http://librozone-react.vercel.app/book/savebooktoshelf', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -15,10 +15,9 @@ const Login = ({ setUsername, setToken }) => {
     useEffect(() => {
         if (successMessage) {
             const timer = setTimeout(() => {
-                setSuccessMessage(''); // Clear the success message after 2 seconds
+                setSuccessMessage('');
             }, 2000);
 
-            // Cleanup the timer if the component unmounts before the timer ends
             return () => clearTimeout(timer);
         }
     }, [successMessage]);
@@ -36,7 +35,7 @@ const Login = ({ setUsername, setToken }) => {
         setError(null);
 
         try {
-            const response = await axios.post('http://localhost:5000/auth/login', formData);
+            const response = await axios.post('http://librozone-react.vercel.app/auth/login', formData);
             const userName = formData.username;
 
             // console.log(response.data.user.username);

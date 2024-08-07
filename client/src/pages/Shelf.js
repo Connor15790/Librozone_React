@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import styles from "./Shelf.module.css";
-import { Form, Button, Alert } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import bookContext from '../context/books/bookContext';
 import axios from 'axios';
 
@@ -21,7 +21,7 @@ const Shelf = () => {
 
     const handleRemove = async (bookId) => {
         try {
-            await axios.delete(`http://localhost:5000/book/delete/${bookId}`, {
+            await axios.delete(`http://librozone-react.vercel.app/book/delete/${bookId}`, {
                 headers: {
                     "Content-Type": "application/json",
                     'Authorization': atoken

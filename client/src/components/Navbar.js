@@ -1,13 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { UserContext } from '../context/users/userContext';
 
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbaar = ({ username, token, handleLogout }) => {
     const navigate = useNavigate();
