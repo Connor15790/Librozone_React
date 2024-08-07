@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 80%;
+    /* background-color: rgb(188, 125, 247); */
+    padding: 34px;
+    margin: auto;
+}
+
+.welcometext {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.catcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.specialoffertext {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 25px;
+    font-weight: bold;
+}

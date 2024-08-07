@@ -1,0 +1,13 @@
+.container {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.headers {
+    text-align: left;
+}
