@@ -10,16 +10,17 @@ import { UserContext } from '../context/users/userContext';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbaar = ({ username, token, handleLogout }) => {
-    // const { username } = useContext(UserContext);
-    // const [username, setUsername] = useState('');
+    const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     // Get the email from local storage
-    //     const storedName = localStorage.getItem('userName');
-    //     if (storedName) {
-    //         setUsername(storedName);
-    //     }
-    // }, []);
+    const handleClick = () => {
+        // Navigate to a new page
+        navigate('/admin');
+
+        // Show an alert after navigation
+        setTimeout(() => {
+            window.alert('IMPORTANT!!! This admin panel is only available for the demo. It should not be available to regular users.');
+        }, 0);
+    };
 
     return (
         <Navbar expand="lg" className="" style={{ backgroundColor: "#e3f2fd" }}>
@@ -36,18 +37,11 @@ const Navbaar = ({ username, token, handleLogout }) => {
                         navbarScroll
                     >
                         <Link to="/home" style={{ textDecoration: 'none' }}><Nav.Link href="#action1">Home</Nav.Link></Link>
-                        <Nav.Link href="#action2">About</Nav.Link>
+                        <Link to="/about" style={{ textDecoration: 'none' }}><Nav.Link href="#action2">About</Nav.Link></Link>
                         {username && <Link to="/shelf" style={{ textDecoration: 'none' }}><Nav.Link href="#action3">{username}</Nav.Link></Link>}
-                        <Link to="/admin" style={{ textDecoration: 'none' }}><Nav.Link href="#action4">Admin</Nav.Link></Link>
+                        <Nav.Link onClick={handleClick} href="#action4">Admin</Nav.Link>
                     </Nav>
                     <Form className="d-flex">
-                        <Form.Control
-                            type="search"
-                            placeholder="Search"
-                            className="me-2"
-                            aria-label="Search"
-                        />
-                        <Button variant="outline-primary">Search</Button>
                         {!token ? (
                             <>
                                 <Link to="/"><Button className='mx-2' variant="outline-primary">Login</Button></Link>

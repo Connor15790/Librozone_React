@@ -19,6 +19,7 @@ import BookState from './context/books/BookState';
 import AddBooks from './pages/AddBooks';
 import Shelf from './pages/Shelf';
 import AddPopular from './pages/AddPopular';
+import About from './pages/About';
 
 function App() {
   const [username, setUsername] = useState('');
@@ -63,6 +64,7 @@ function App() {
                 <Route exact path='/addbooks' element={<AddBooks />} />
                 <Route exact path='/shelf' element={<Shelf />} />
                 <Route exact path='/addpopular' element={<AddPopular />} />
+                <Route exact path='/about' element={<About />} />
               </Route>
             </Routes>
           </Router>

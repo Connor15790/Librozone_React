@@ -4,21 +4,24 @@ import { Alert, Button, Form } from 'react-bootstrap';
 import styles from './Home.module.css';
 // import { UserContext } from '../context/users/userContext';
 import bookContext from '../context/books/bookContext';
+import Footer from '../components/Footer';
 
 const Home = () => {
     const location = useLocation();
     const context = useContext(bookContext);
 
-    const { books, fetchAllPopularBooks } = context;
+    useEffect(() => {
+        fetchAllPopularBooks();
+        setBooks([])
+    }, [])
+
+    const { books, setBooks, fetchAllPopularBooks } = context;
 
     const [successMessage, setSuccessMessage] = useState(location.state?.successMessage || '');
     // const { username, setUsername } = useContext(UserContext);
     const [username, setUsername] = useState('');
     const [alert, setAlert] = useState("");
 
-    useEffect(() => {
-        fetchAllPopularBooks()
-    }, [])
 
     useEffect(() => {
         if (successMessage) {
@@ -94,7 +97,7 @@ const Home = () => {
                     "Authorization": atoken
                 },
                 body: JSON.stringify({
-                    _id: book._id,
+                    bookid: book._id,
                     bookname: book.bookname,
                     bookauthor: book.bookauthor,
                     bookoverview: book.bookoverview,
@@ -158,10 +161,10 @@ const Home = () => {
                                     Read
                                     <img src="./assets/read.png" alt="Logo" width="28" height="28" className="d-inline-block align-text-top ms-2" />
                                 </Button>
-                                <Button className="btn btn-primary btn-lg black-background2 white2">
+                                {/* <Button className="btn btn-primary btn-lg black-background2 white2">
                                     Rate
                                     <img src="./assets/star.png" alt="Logo" width="25" height="25" className="d-inline-block align-text-top ms-2" />
-                                </Button>
+                                </Button> */}
                                 <Button onClick={() => handleSaveBook(book)} type="button" className="btn btn-success btn-lg mx-2">
                                     Save+
                                 </Button>
@@ -178,7 +181,9 @@ const Home = () => {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
+
             </div>
+            <Footer />
         </>
     )
 }

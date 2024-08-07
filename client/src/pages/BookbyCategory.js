@@ -88,10 +88,10 @@ const BookbyCategory = () => {
                                 Read
                                 <img src="/assets/read.png" alt="Logo" width="28" height="28" className="d-inline-block align-text-top ms-2" />
                             </Button>
-                            <Button type="button" className="btn btn-primary btn-lg mx-2 black-background2 white2">
+                            {/* <Button type="button" className="btn btn-primary btn-lg mx-2 black-background2 white2">
                                 Rate
                                 <img src="/assets/star.png" alt="Logo" width="25" height="25" className="d-inline-block align-text-top ms-2" />
-                            </Button>
+                            </Button> */}
                             <Button onClick={() => handleSaveBook(book)} type="button" className="btn btn-success btn-lg mx-2">
                                 Save+
                             </Button>
