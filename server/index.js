@@ -26,6 +26,10 @@ mongoose.connect(DB_URL, {
 app.use('/auth', authRoutes);
 app.use('/book', bookRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
