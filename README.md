@@ -4,6 +4,8 @@ Once logged in, you have the option to read books directly on the platform or sa
 
 For the purposes of this demonstration, the site also includes an admin panel. This exclusive feature is available only during the demo and is not accessible to regular users. The admin panel allows administrators to manage the book collection, including adding new titles or removing existing ones. This feature showcases the platform's scalability and ease of content management. Please note that in a production environment, access to the admin panel would be restricted to authorized personnel only.
 
+The demo is currently not responsive for mobile devices and a PC is recommended for viewing it.
+
 Check out the demo website here: https://loquacious-chimera-c5670e.netlify.app/
 
 To manually run your React web application through VS Code when the GitHub repository contains both client and server folders, follow these steps:
