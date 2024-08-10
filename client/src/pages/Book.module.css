@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 80%;
+    /* background-color: rgb(188, 125, 247); */
+    padding: 34px;
+    margin: auto;
+}
+
+.book_name {
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.author_name {
+    color: #928888;
+    font-style: italic;
+    text-align: left;
+}
+
+.overviewcontainer {
+    display: flex;
+    width: 100%;
+}
+
+.overviewbody {
+    width: 80%;
+}
+
+.overviewtext {
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.overview {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    background-color: black;
+    border-radius: 20px;
+    text-align: justify;
+    border: 2px solid white;
+}
+
+.imgcontainer {
+    width: 20%;
+}

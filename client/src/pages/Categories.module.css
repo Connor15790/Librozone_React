@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 80%;
+    /* background-color: rgb(188, 125, 247); */
+    padding: 34px;
+    margin: auto;
+}
+
+.categorytext {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    margin-top: 40px;
+}
+
+.blackbackground1 {
+    background-color:#F24D4D;
+}
+
+.blackbackground1:hover {
+    background-color: #CA0404;
+}
+
+.white1 {
+    color:#ffffff;
+}
