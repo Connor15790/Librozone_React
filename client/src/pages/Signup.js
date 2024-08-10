@@ -43,7 +43,7 @@ const Signup = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/auth/register', {
+            const response = await axios.post('https://librozone-react.onrender.com/auth/register', {
                 username: formData.username,
                 password: formData.password
             });

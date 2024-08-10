@@ -24,7 +24,7 @@ const BookbyCategory = () => {
         try {
             const atoken = localStorage.getItem("token");
 
-            const response = await fetch('http://localhost:5000/book/savebooktoshelf', {
+            const response = await fetch('https://librozone-react.onrender.com/book/savebooktoshelf', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

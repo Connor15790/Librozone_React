@@ -27,7 +27,7 @@ const Admin = () => {
 
     const handleRemove = async (bookId) => {
         try {
-            await axios.delete(`http://localhost:5000/book/deletebook/${bookId}`, {
+            await axios.delete(`https://librozone-react.onrender.com/book/deletebook/${bookId}`, {
                 headers: {
                     "Content-Type": "application/json",
                     'Authorization': atoken

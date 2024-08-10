@@ -21,7 +21,7 @@ const Shelf = () => {
 
     const handleRemove = async (bookId) => {
         try {
-            await axios.delete(`http://localhost:5000/book/delete/${bookId}`, {
+            await axios.delete(`https://librozone-react.onrender.com/book/delete/${bookId}`, {
                 headers: {
                     "Content-Type": "application/json",
                     'Authorization': atoken
