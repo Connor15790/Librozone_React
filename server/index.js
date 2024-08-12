@@ -27,7 +27,7 @@ app.use('/auth', authRoutes);
 app.use('/book', bookRoutes);
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Server Ready!');
 });
 
 // Start the server
