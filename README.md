@@ -6,6 +6,8 @@ For the purposes of this demonstration, the site also includes an admin panel. T
 
 The demo is currently not responsive for mobile devices and a PC is recommended for viewing it.
 
+Start the server first: https://librozone-react.onrender.com
+
 Check out the demo website here: https://loquacious-chimera-c5670e.netlify.app/
 
 
