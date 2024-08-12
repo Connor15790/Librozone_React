@@ -8,4 +8,4 @@ The demo is currently not responsive for mobile devices and a PC is recommended 
 
 Check out the demo website here: https://loquacious-chimera-c5670e.netlify.app/
 
-![Example Image](images/example.png)
+![Example Image](images/Home.png)
