@@ -25,6 +25,6 @@ This is the layout of the book reading page. While it currently contains placeho
 This is the Shelf page where a user can save any books to read later.
 
 # 4. Admin -
-![Example Image](images/Shelf.png)
+![Example Image](images/Admin.png)
 
 This is the admin page, which features a highly protected route. For the demo, it will be accessible to all users. The admin page allows administrators to add or remove books from the website, search for books by name, and categorize them into sections like Popular Books, Discounted Books, and more.
