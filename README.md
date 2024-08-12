@@ -9,7 +9,7 @@ The demo is currently not responsive for mobile devices and a PC is recommended 
 Check out the demo website here: https://loquacious-chimera-c5670e.netlify.app/
 
 
-**#1. Here is the landing page after a uer logs in -**
+# 1. Here is the landing page after a uer logs in -
 ![Example Image](images/Home.png)
 
 Users can explore books across various categories, selecting their favorites to read immediately or save to their Shelf for later. Additionally, they can browse through tags such as popular books, upcoming releases, discounted titles, and more, making it easy to discover books that match their interests.
