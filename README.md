@@ -9,22 +9,22 @@ The demo is currently not responsive for mobile devices and a PC is recommended 
 Check out the demo website here: https://loquacious-chimera-c5670e.netlify.app/
 
 
-Here is the landing page after a uer logs in -
+**1. Here is the landing page after a uer logs in -**
 ![Example Image](images/Home.png)
 
 Users can explore books across various categories, selecting their favorites to read immediately or save to their Shelf for later. Additionally, they can browse through tags such as popular books, upcoming releases, discounted titles, and more, making it easy to discover books that match their interests.
 
-Book Reading Page -
+**2. Book Reading Page -**
 ![Example Image](images/Bookread.png)
 
 This is the layout of the book reading page. While it currently contains placeholder text, publishers will have the option to add the full content of any book.
 
-Shelf -
+**3. Shelf -**
 ![Example Image](images/Shelf.png)
 
 This is the Shelf page where a user can save any books to read later.
 
-Admin -
+**4. Admin -**
 ![Example Image](images/Shelf.png)
 
 This is the admin page, which features a highly protected route. For the demo, it will be accessible to all users. The admin page allows administrators to add or remove books from the website, search for books by name, and categorize them into sections like Popular Books, Discounted Books, and more.
